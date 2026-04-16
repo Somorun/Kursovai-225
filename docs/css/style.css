@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+header {
+    background: #1e3a8a;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button, .add-button {
+    background: #2563eb;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .add-button:hover {
+    background: #1d4ed8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input {
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    margin: 0;
+}
+
+form {
+    width: 100%;
+}
+
+p, h1, h2, h3, a {
+    overflow-wrap: break-word;
+}
+
+.add-button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    button, .add-button {
+        width: 100%;
+        text-align: center;
+    }
+}
